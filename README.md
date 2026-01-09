@@ -6,7 +6,8 @@
 ### Project Description
 Provide a high-level description of your project. Include explanatory links if you think they will be helpful.
 
-gonna make a game where you control a little square that moves around and shoots bullets at circle enemies that try to kill you by touching you
+gonna make a game where you control a little square that moves around and shoots bullets at circle enemies that try to kill you by touching you.
+might add some more stuff if i have time such as power ups, score, and different enemy types.
 
 ### Skill Usage
 Explain what skills from this semester you will be using in this project, and how they will be used.
@@ -27,9 +28,46 @@ Keyboard Commands:
 - LIST OF COMMANDS HERE
 
 Mouse Control:
-- Mouse movement:
-- Mouse pressed:
+- Mouse movement: nah
+- Mouse pressed: nah
 
 
 ### Classes
 What classes will you be creating for this project? Include the instance variables and methods that you believe you will need. You will be required to create at least 2 different classes. If you are going to use classes similar to those we've made for previous assignments, you will have to add new features to them.
+
+i will have a player class, bullet class, and an enemy class.
+
+class Player {
+  float x, y; // positiom of the player
+  float speed;
+
+  Player(float startX, float startY) {
+    x = startX;
+    y = startY;
+    speed = 5;
+  }
+
+  void keyPressed() {
+    if (key == 'w') { // up
+      y -= speed;
+    } else if (key == 's') { // down
+      y += speed;
+    } else if (key == 'a') { // left
+      x -= speed;
+    } else if (key == 'd') { // right
+      x += speed;
+    }
+  }
+
+  void display() {
+    fill(255, 0, 0);
+    square(x, y, 30); // draw the player as a square
+  }
+}
+
+class Bullet {
+}
+
+class Enemy {
+}
+
