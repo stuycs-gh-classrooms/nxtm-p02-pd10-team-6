@@ -40,19 +40,55 @@ i will have a player class, bullet class, and an enemy class.
 player class variables:
 
 position
+
 movement
+
 hp
 
 player class methods:
 
 void move()
+
 void shoot()
+
 void display()
+
 void takeDamage(int amount)
 
 
-bullet class will have position, movement, direction, damage, variables. it will have these methods:
+bullet class variables: 
 
+position
 
+movement
 
-enemy class will have position, movement, 
+direction
+
+damage
+
+destroyed?
+
+bullet class methods:
+
+void update()
+
+void display()
+
+boolean isOffScreen()
+
+enemy class variables:
+
+position
+
+speed
+
+health
+
+enemy class methods:
+
+void move(): Handle the enemy's movement (could be random, toward the player, etc.).
+    void attack(): Types of attacks the enemy can perform.
+    void display(): Render the enemy on screen.
+    void takeDamage(int amount): Reduce health by specified amount.
+    boolean isDefeated(): Check if the enemy's health is zero.
+
