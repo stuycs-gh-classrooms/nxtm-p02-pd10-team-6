@@ -37,43 +37,14 @@ What classes will you be creating for this project? Include the instance variabl
 
 i will have a player class, bullet class, and an enemy class.
 
-
-class Player {
-  float x, y; // positiom of the player
-  float speed;
-
-
-  Player(float startX, float startY) {
-    x = startX;
-    y = startY;
-    speed = 5;
-  }
+player class will have position, movement, and hp variables. it will have 
+    void move(): Handle player movement based on input.
+    void shoot(): Create and fire a bullet.
+    void display(): Render the player on screen.
+    void takeDamage(int amount): Reduce health by specified amount.
+    void heal(int amount): Increase health by specified amount.
 
 
-  void keyPressed() {
-    if (key == 'w') { // up
-      y -= speed;
-    } else if (key == 's') { // down
-      y += speed;
-    } else if (key == 'a') { // left
-      x -= speed;
-    } else if (key == 'd') { // right
-      x += speed;
-    }
-  }
+bullet class will have position and movement variables.
 
-
-  void display() {
-    fill(255, 0, 0);
-    square(x, y, 30); // draw the player as a square
-  }
-}
-
-
-class Bullet {
-}
-
-
-class Enemy {
-}
-
+enemy class will have position, movement, 
