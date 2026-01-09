@@ -37,15 +37,18 @@ What classes will you be creating for this project? Include the instance variabl
 
 i will have a player class, bullet class, and an enemy class.
 
+
 class Player {
   float x, y; // positiom of the player
   float speed;
+
 
   Player(float startX, float startY) {
     x = startX;
     y = startY;
     speed = 5;
   }
+
 
   void keyPressed() {
     if (key == 'w') { // up
@@ -59,14 +62,17 @@ class Player {
     }
   }
 
+
   void display() {
     fill(255, 0, 0);
     square(x, y, 30); // draw the player as a square
   }
 }
 
+
 class Bullet {
 }
+
 
 class Enemy {
 }
