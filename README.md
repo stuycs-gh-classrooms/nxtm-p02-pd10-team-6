@@ -37,14 +37,22 @@ What classes will you be creating for this project? Include the instance variabl
 
 i will have a player class, bullet class, and an enemy class.
 
-player class will have position, movement, and hp variables. it will have 
-    void move(): Handle player movement based on input.
-    void shoot(): Create and fire a bullet.
-    void display(): Render the player on screen.
-    void takeDamage(int amount): Reduce health by specified amount.
-    void heal(int amount): Increase health by specified amount.
+player class variables:
+
+position
+movement
+hp
+
+player class methods:
+
+void move()
+void shoot()
+void display()
+void takeDamage(int amount)
 
 
-bullet class will have position and movement variables.
+bullet class will have position, movement, direction, damage, variables. it will have these methods:
+
+
 
 enemy class will have position, movement, 
